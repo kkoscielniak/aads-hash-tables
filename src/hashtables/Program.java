@@ -18,6 +18,6 @@ public class Program {
      * @param args the command line arguments
     */
     public static void main(String[] args) {       
-        System.out.println(Utils.getInstance().xorshf96());
+        System.out.println(Utils.getInstance().isNumeric(Utils.getInstance().xorshf96()));
     }   
 }

@@ -38,4 +38,8 @@ public class Utils {
         z = tmp^x^y;
         return z;         
     }
+    
+    public static boolean isNumeric(Object o) {
+        return (o instanceof Number);
+    }
 }
