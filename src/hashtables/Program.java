@@ -6,6 +6,8 @@ package hashtables;
  */
 public class Program {
     
+    private static final int _dataSize = 1000019;
+    
     /**
      * Determines type of hashing
      */
@@ -17,7 +19,8 @@ public class Program {
     /**
      * @param args the command line arguments
     */
-    public static void main(String[] args) {       
-        System.out.println(Utils.getInstance().isNumeric(Utils.getInstance().xorshf96()));
+    public static void main(String[] args) {               
+        ArrayGenerator<Double> strings;
+        strings = new ArrayGenerator<>(_dataSize, 25, Double.class);
     }   
 }
