@@ -40,7 +40,7 @@ public class ArrayGenerator<T> {
     }
 
     private void GenerateRandomStringArray(int size, int elSize, Class<T> type) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        throw new UnsupportedOperationException("Not supported yet");
     }
 
     private void GenerateRandomDoublesArray(int size, int elSize, Class<T> type) {
@@ -50,7 +50,7 @@ public class ArrayGenerator<T> {
         @SuppressWarnings({"unchecked"})
         final Double[] arr = (Double[])Array.newInstance(type, size);
        
-        for(int i=0; i<size; i++) {
+        for(int i = 0; i < size; i++) {
             Double d = random.nextDouble()*((long)Math.pow(10, random.nextInt(elSize-1)+1));
             arr[i] = d;
         }

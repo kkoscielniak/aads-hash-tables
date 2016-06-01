@@ -8,9 +8,9 @@ public class Utils {
     
     private static Utils instance = null;
     
-    private static Long x = (long) 123456789;
-    private static Long y = (long) 362436069;
-    private static Long z = (long) 521288629;
+    private static int x = 123456789;
+    private static int y = 362436069;
+    private static int z = 521288629;
     
     public static Utils getInstance() {
         
@@ -24,9 +24,9 @@ public class Utils {
      * Generates big number, algorithm given by the tutor :)
      * @return
      */
-    public static Long xorshf96() {
+    public static int xorshf96() {
         
-        Long tmp; 
+        int tmp; 
         
         x ^= x << 16; 
         x ^= x >> 5;
